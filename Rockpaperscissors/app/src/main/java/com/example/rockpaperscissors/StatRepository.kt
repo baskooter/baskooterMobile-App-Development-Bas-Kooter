@@ -39,6 +39,8 @@ public class StatRepository(context: Context) {
         return statDao.countDraw()
     }
 
+
+
     suspend fun deleteAllStats() = statDao.deleteAllStats()
 
 }

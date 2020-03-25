@@ -5,12 +5,14 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
-import java.util.*
+
 
 
 @Entity(tableName = "statTable")
 @Parcelize
 data class Stats (
+    @ColumnInfo(name = "date")
+    val date: Long,
     @ColumnInfo(name = "winnaar")
     var winnaar: String,
     @ColumnInfo(name = "userHand")

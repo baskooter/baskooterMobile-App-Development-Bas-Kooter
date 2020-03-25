@@ -9,6 +9,7 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.item_stats.view.*
+import java.util.*
 
 
 class StatAdapter(private val stats: List<Stats>) : RecyclerView.Adapter<StatAdapter.ViewHolder>() {
@@ -16,7 +17,9 @@ class StatAdapter(private val stats: List<Stats>) : RecyclerView.Adapter<StatAda
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(stat: Stats) {
+            var dateTime = Date(stat.date)
             itemView.tvWinLose.text = stat.winnaar
+            itemView.tvDatum.text = dateTime.toString()
 
             if(stat.userHand == "rock"){
                 itemView.ivCompHand.setImageResource(R.drawable.rock)

@@ -12,6 +12,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+
+
 class MainActivity : AppCompatActivity() {
     private lateinit var statRepository: StatRepository
     var hand = "Rock"
@@ -136,10 +138,12 @@ class MainActivity : AppCompatActivity() {
                 winnaar = "Player wins!"
             }
         }
+        var dateTime : Long = System.currentTimeMillis()
 
         CoroutineScope(Dispatchers.Main).launch {
 
             val stat = Stats(
+                date = dateTime,
                 winnaar = winnaar,
                 userHand = hand,
                 computerHand = computerHand
