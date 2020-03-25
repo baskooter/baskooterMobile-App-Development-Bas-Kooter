@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Higher Lower</string>
+    <string name="topText">Guess if the next roll is going to be lower, equal or higher</string>
+    <string name="midTxt">Last throw: %d</string>
+    <string name="lowerBut">Lower</string>
+    <string name="equalBut">Equal</string>
+    <string name="higherBut">Higher</string>
+    <string name = "correct">Correct!</string>
+    <string name = "incorrect">Incorrect!</string>
+</resources>

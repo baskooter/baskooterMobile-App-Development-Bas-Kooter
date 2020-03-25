@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Logica App</string>
+    <string name="topTxt">Conjunction (AND)</string>
+    <string name ="textView9">T</string>
+    <string name ="textView2">A</string>
+    <string name ="textView3">B</string>
+    <string name ="textView4">A^B</string>
+    <string name ="textView7">T</string>
+    <string name ="textView6">F</string>
+    <string name ="textView8">F</string>
+    <string name ="textView10">T</string>
+    <string name ="textView11">T</string>
+    <string name ="textView12">F</string>
+    <string name ="textView13">F</string>
+    <string name = "incorrect">Correct number of answers: %d</string>
+    <string name="confBut">Confirm</string>
+</resources>

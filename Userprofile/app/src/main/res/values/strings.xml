@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">User profile</string>
+    <string name="splashTitel">User Profile Kotlin</string>
+    <string name="openGallery">Open picture gallery</string>
+    <string name="name" >%1$s %2$s</string>
+    <string name="profileDesc" />
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Picture Quiz</string>
+    <string name="titleText">What kind of animal is this?</string>
+    <string name="speciesAns">Species</string>
+    <string name="confirmBut">Confirm</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect, the correct answer is Giraffe!</string>
+    <string name="etAnswerRes">Species</string>
+    <string name="etAnswerHint">Species</string>
+</resources>
