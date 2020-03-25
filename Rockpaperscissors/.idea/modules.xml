@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Rockpaperscissors - Not working (date convert).iml" filepath="$PROJECT_DIR$/.idea/Rockpaperscissors - Not working (date convert).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rock paper scissors.iml" filepath="$PROJECT_DIR$/Rock paper scissors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
