@@ -17,11 +17,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
-
-
-
+    
     private fun checkAnswer() {
         val answer = etAnswer.text.toString()
 
