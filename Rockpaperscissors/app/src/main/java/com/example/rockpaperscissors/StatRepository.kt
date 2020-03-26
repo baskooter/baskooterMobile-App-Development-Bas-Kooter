@@ -27,19 +27,10 @@ public class StatRepository(context: Context) {
         statDao.updateStat(stat)
     }
 
-    suspend fun countPlayerWin(): Int  {
-        return statDao.countPlayerWin()
+    suspend fun getResultCount (resultString: String?) :Int {
+        // print("resultString is: "+resultString)
+        return statDao.getResultCount(resultString)
     }
-
-    suspend fun countComputerWin() : Int {
-        return statDao.countComputerWin()
-    }
-
-    suspend fun countDraw(): Int  {
-        return statDao.countDraw()
-    }
-
-
 
     suspend fun deleteAllStats() = statDao.deleteAllStats()
 

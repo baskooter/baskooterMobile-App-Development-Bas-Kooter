@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     var draw: Int = 0
     var winnaar: String = "x"
     var id: Long = 0
+
     private val mainScope = CoroutineScope(Dispatchers.Main)
 
 
@@ -161,15 +162,10 @@ class MainActivity : AppCompatActivity() {
             }
 
         mainScope.launch {
-            val countWin = withContext(Dispatchers.IO) {
-                statRepository.countPlayerWin()
-            }
-            val countDraw = withContext(Dispatchers.IO) {
-                statRepository.countDraw()
-            }
-            val countLose = withContext(Dispatchers.IO) {
-                statRepository.countComputerWin()
-            }
+
+            val countDraw = statRepository.getResultCount(getString(R.string.draw_string))
+            var countLose = statRepository.getResultCount(getString(R.string.lose_string))
+            var countWin = statRepository.getResultCount(getString(R.string.win_string))
 
             tvStats.text = getString(R.string.statistics, countWin, countLose, countDraw)
         }

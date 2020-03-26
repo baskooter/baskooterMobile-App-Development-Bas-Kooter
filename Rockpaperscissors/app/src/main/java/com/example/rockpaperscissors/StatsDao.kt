@@ -17,15 +17,10 @@ interface StatsDao {
     @Update
     suspend fun updateStat(stat: Stats)
 
-    @Query("SELECT COUNT(winnaar) FROM statTable WHERE winnaar = 'Player wins!'")
-    suspend fun countPlayerWin() : Int
-
-    @Query("SELECT COUNT(winnaar) FROM statTable WHERE winnaar = 'Computer wins!'")
-    suspend fun countComputerWin(): Int
-
-    @Query("SELECT COUNT(winnaar) FROM statTable WHERE winnaar = 'Draw!'")
-    suspend fun countDraw(): Int
 
     @Query("DELETE FROM statTable")
     suspend fun deleteAllStats()
+
+    @Query("SELECT COUNT(*) FROM statTable WHERE winnaar like :resultString")
+    suspend fun getResultCount(resultString: String?): Int
 }
